@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy 3rd Monthsary❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Day 90 with love!❤️</h1>
+
+    <!-- Letter Panel -->
+    <div class="letter">
+      Another month with u again and honestly every month with u feels like a blessing. I know I’m not always easy to understand or be with but even with that u’re still here. Thank u so much, baby for loving me and choosing to understand me.
+
+      In our three months together, we’ve been through so many challenges, countless disagreements and misunderstandings, but even then we choose to stay and keep loving each other. You are the most beautiful gift I’ve ever received and I thank God every day that u came into my life.
+
+      I’m so lucky ’cuz u became my baby. Through all the exhaustion and hardships, you became my rest and my home. You’re not just part of my world for me you’re my universe.
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider">
+      <div class="slides">
+        <img src="assets/images/img1.jpg" alt="Memory 1">
+        <img src="assets/images/img2.jpg" alt="Memory 2">
+        <img src="assets/images/img3.jpg" alt="Memory 3">
+        <img src="assets/images/img4.jpg" alt="Memory 4">
+        <img src="assets/images/img5.jpg" alt="Memory 5">
+        <img src="assets/images/img6.jpg" alt="Memory 6">
+        <img src="assets/images/img7.jpg" alt="Memory 7">
+        <img src="assets/images/img8.jpg" alt="Memory 8">
+        <img src="assets/images/img9.jpg" alt="Memory 9">
+        <img src="assets/images/img10.jpg" alt="Memory 10">
+        <img src="assets/images/img11.jpg" alt="Memory 11">
+        <img src="assets/images/img12.jpg" alt="Memory 12">
+      </div>
+    </div>
+
+    <!-- Music Button Between Slider & Video -->
+    <div class="music-button">
+      <button id="music-btn">Play Music 🎶</button>
+      <audio id="love-audio" src="assets/audio/love-song.mp3" loop></audio>
+    </div>
+
+    <!-- Video -->
+    <div class="video-panel">
+      <video controls playsinline loop>
+        <source src="assets/video/love-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <footer>
+      I love you, baby!💕
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script>
+    // Music button
+    const musicBtn = document.getElementById('music-btn');
+    const loveAudio = document.getElementById('love-audio');
+
+    musicBtn.addEventListener('click', () => {
+      if (loveAudio.paused) {
+        loveAudio.play();
+        musicBtn.textContent = "Pause Music ⏸️";
+      } else {
+        loveAudio.pause();
+        musicBtn.textContent = "Play Music 🎶";
+      }
+    });
+  </script>
+</body>
+</html>

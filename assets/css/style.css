@@ -1,0 +1,121 @@
+/* BODY AND CONTAINER */
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, #d4f6d4, #b8edc1);
+  color: #4a2c2a;
+  text-align: center;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 720px;
+  width: 90%;
+  margin: 20px auto;
+  background: #ffffffdd;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 { font-size: 2em; margin-bottom: 10px; }
+
+.letter {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 20px;
+  background: #d7f0d7dd;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  white-space: pre-line;
+  text-align: left;
+  border: 1px solid #b3e6b3;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.slides {
+  display: flex;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.slides img {
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 300px;
+  scroll-snap-align: start;
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: grab;
+}
+
+.slides img:active { cursor: grabbing; }
+
+/* MUSIC BUTTON */
+.music-button {
+  margin: 20px 0;
+}
+
+.music-button button {
+  background: #a6d8a6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.music-button button:hover {
+  background: #c0f0c0;
+  transform: scale(1.05);
+}
+
+/* VIDEO PANEL */
+.video-panel {
+  margin: 20px 0;
+  padding: 10px;
+  background: #d7f0d7dd;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.video-panel video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 { font-size: 1.7em; }
+  .letter { font-size: 0.95em; padding: 18px; }
+  .slides img { width: 90%; max-width: none; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.4em; }
+  .letter { font-size: 0.9em; padding: 15px; }
+  .slides img { width: 95%; }
+}
